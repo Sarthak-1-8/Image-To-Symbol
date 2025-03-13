@@ -47,7 +47,7 @@ for y in range(0, height, block_size) :
                 file.write(".")
         else : 
             with open("output.txt", "a") as file:
-                file.write("`")
+                file.write(" ")
 
     with open("output.txt", "a") as file:
         file.write("\n")
