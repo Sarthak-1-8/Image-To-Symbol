@@ -16,7 +16,7 @@ with open("output.txt", "w") as file: # w for write
 for y in range(0, height, block_size) :
     for x in range(0, width, block_size) :
         block = pixals[y:y+block_size, x:x+block_size]
-        # clustring image using K-Means Clustering
+        # applying average pooling to image blocks and mapping to ASCII characters
         avg_intensity = np.mean(block)
         if avg_intensity <= 25 : 
             with open("output.txt", "a") as file:
